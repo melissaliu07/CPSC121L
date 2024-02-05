@@ -1,0 +1,7 @@
+[
+ {
+ "directory" : "/home/melissa/CPSC121L/lab-01/prob01",
+ "command" : "clang++ -std=c++17 main.cc -o main",
+ "file" : "/home/melissa/CPSC121L/lab-01/prob01/main.cc"
+ },
+]

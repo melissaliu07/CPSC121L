@@ -1,0 +1,54 @@
+---
+MainSourceFile:  '/home/melissa/CPSC121L/lab-01/prob01/main.cc'
+Diagnostics:
+  - DiagnosticName:  google-readability-todo
+    DiagnosticMessage:
+      Message:         'missing username/bug in TODO'
+      FilePath:        main.cc
+      FileOffset:      87
+      Replacements:
+        - FilePath:        main.cc
+          Offset:          87
+          Length:          60
+          ReplacementText: '// TODO(melissa): Create a program that computes the restaurant bill.'
+    Level:           Warning
+    BuildDirectory:  '/home/melissa/CPSC121L/lab-01/prob01'
+  - DiagnosticName:  readability-isolate-declaration
+    DiagnosticMessage:
+      Message:         multiple declarations in a single statement reduces readability
+      FilePath:        main.cc
+      FileOffset:      150
+      Replacements:
+        - FilePath:        main.cc
+          Offset:          150
+          Length:          30
+          ReplacementText: "double meal_cost;\n  double tip_percent;"
+    Level:           Warning
+    BuildDirectory:  '/home/melissa/CPSC121L/lab-01/prob01'
+  - DiagnosticName:  cppcoreguidelines-init-variables
+    DiagnosticMessage:
+      Message:         'variable ''meal_cost'' is not initialized'
+      FilePath:        main.cc
+      FileOffset:      157
+      Replacements:    []
+    Notes:
+      - Message:         this fix will not be applied because it overlaps with another fix
+        FilePath:        ''
+        FileOffset:      0
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/melissa/CPSC121L/lab-01/prob01'
+  - DiagnosticName:  cppcoreguidelines-init-variables
+    DiagnosticMessage:
+      Message:         'variable ''tip_percent'' is not initialized'
+      FilePath:        main.cc
+      FileOffset:      168
+      Replacements:    []
+    Notes:
+      - Message:         this fix will not be applied because it overlaps with another fix
+        FilePath:        ''
+        FileOffset:      0
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/melissa/CPSC121L/lab-01/prob01'
+...
